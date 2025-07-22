@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCare Institute - Online Admission & Counseling</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Edu<span>Care</span></h1>
+                <p>Institute of Excellence</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#streams">Streams</a></li>
+                    <li><a href="#admission">Admission</a></li>
+                    <li><a href="#counseling">Counseling</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Shape Your Future With EduCare</h1>
+                <p>Online admissions open for 2023-24 session. Get free career counseling from our experts.</p>
+                <div class="hero-buttons">
+                    <a href="#admission" class="btn-primary">Apply Now</a>
+                    <a href="#counseling" class="btn-secondary">Free Counseling</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Our Institute</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>20+ Years of Educational Excellence</h3>
+                    <p>EduCare Institute has been a pioneer in quality education since 2001. We provide world-class infrastructure, experienced faculty, and a nurturing environment for holistic development.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> 95%+ pass percentage</li>
+                        <li><i class="fas fa-check-circle"></i> 100% placement assistance</li>
+                        <li><i class="fas fa-check-circle"></i> Industry-aligned curriculum</li>
+                        <li><i class="fas fa-check-circle"></i> Scholarship programs</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="img/institute.jpeg" alt="EduCare Institute Campus">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Streams Section -->
+    <section id="streams" class="streams">
+        <div class="container">
+            <h2 class="section-title">Our Academic Streams</h2>
+            <p class="section-subtitle">Choose the path that aligns with your career aspirations</p>
+            
+            <div class="streams-grid">
+                <div class="stream-card">
+                    <div class="stream-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Science</h3>
+                    <p>Physics, Chemistry, Biology, Mathematics with advanced lab facilities and research opportunities.</p>
+                    <a href="#" class="btn-stream">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="stream-card">
+                    <div class="stream-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Commerce</h3>
+                    <p>Accountancy, Business Studies, Economics with practical training in financial management.</p>
+                    <a href="#" class="btn-stream">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="stream-card">
+                    <div class="stream-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Arts</h3>
+                    <p>History, Political Science, Psychology with emphasis on creative thinking and analysis.</p>
+                    <a href="#" class="btn-stream">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="stream-card">
+                    <div class="stream-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Technology</h3>
+                    <p>Computer Science, IT, AI & ML with hands-on training in latest technologies.</p>
+                    <a href="#" class="btn-stream">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Section -->
+    <section id="admission" class="admission">
+        <div class="container">
+            <h2 class="section-title">Online Admission</h2>
+            <p class="section-subtitle">Fill the form below to begin your admission process</p>
+            
+            <div class="admission-form">
+                <form id="admissionForm">
+                    <div class="form-group">
+                        <label for="fullname">Full Name*</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="stream">Preferred Stream*</label>
+                            <select id="stream" name="stream" required>
+                                <option value="">Select Stream</option>
+                                <option value="science">Science</option>
+                                <option value="commerce">Commerce</option>
+                                <option value="arts">Arts</option>
+                                <option value="technology">Technology</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="grade">Current Grade/Percentage*</label>
+                            <input type="text" id="grade" name="grade" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Submit Application</button>
+                </form>
+                
+                <div class="admission-info">
+                    <h3>Admission Process</h3>
+                    <ul>
+                        <li><span>1</span> Submit the online application form</li>
+                        <li><span>2</span> Our counselor will contact you within 24 hours</li>
+                        <li><span>3</span> Document verification & interview</li>
+                        <li><span>4</span> Fee payment & enrollment</li>
+                    </ul>
+                    
+                    <div class="documents-required">
+                        <h4>Documents Required:</h4>
+                        <p>Previous year mark sheet, Aadhar card, 2 passport photos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counseling Section -->
+    <section id="counseling" class="counseling">
+        <div class="container">
+            <h2 class="section-title">Free Career Counseling</h2>
+            <p class="section-subtitle">Book a session with our expert counselors to choose the right path</p>
+            
+            <div class="counseling-content">
+                <div class="counseling-image">
+                    <img src="img/Career Counseling.jpeg" alt="Career Counseling">
+                </div>
+                
+                <div class="counseling-form">
+                    <form id="counselingForm">
+                        <div class="form-group">
+                            <label for="counsel_name">Name*</label>
+                            <input type="text" id="counsel_name" name="counsel_name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="counsel_email">Email*</label>
+                            <input type="email" id="counsel_email" name="counsel_email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="counsel_phone">Phone*</label>
+                            <input type="tel" id="counsel_phone" name="counsel_phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interest_area">Area of Interest*</label>
+                            <select id="interest_area" name="interest_area" required>
+                                <option value="">Select Area</option>
+                                <option value="science">Science Streams</option>
+                                <option value="commerce">Commerce Streams</option>
+                                <option value="arts">Arts Streams</option>
+                                <option value="professional">Professional Courses</option>
+                                <option value="undecided">Not Sure/Need Guidance</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferred_date">Preferred Date*</label>
+                            <input type="date" id="preferred_date" name="preferred_date" required>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Book Free Session</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="counseling-benefits">
+                <h3>Benefits of Our Counseling:</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-user-graduate"></i>
+                        <h4>Career Assessment</h4>
+                        <p>Identify your strengths and suitable career options</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-road"></i>
+                        <h4>Pathway Planning</h4>
+                        <p>Create a step-by-step plan to achieve your goals</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-book-open"></i>
+                        <h4>Course Selection</h4>
+                        <p>Choose the right courses aligned with your aspirations</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Future Trends</h4>
+                        <p>Understand emerging career opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Students Say</h2>
+            <p class="section-subtitle">Success stories from our alumni community</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"The counseling session helped me realize my potential and choose the right science stream. Today I'm pursuing my dream career in medicine."</p>
+                        <div class="testimonial-author">
+                            <img src="images/student1.jpg" alt="Riya Sharma">
+                            <div>
+                                <h4>Riya Sharma</h4>
+                                <p>MBBS Student, AIIMS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"EduCare's commerce program gave me strong fundamentals in accounting. I cleared CA in first attempt thanks to their excellent faculty."</p>
+                        <div class="testimonial-author">
+                            <img src="images/student2.jpg" alt="Amit Patel">
+                            <div>
+                                <h4>Amit Patel</h4>
+                                <p>Chartered Accountant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The arts faculty encouraged critical thinking and creativity. I developed strong analytical skills that helped me crack civil services."</p>
+                        <div class="testimonial-author">
+                            <img src="images/student3.jpg" alt="Priya Nair">
+                            <div>
+                                <h4>Priya Nair</h4>
+                                <p>IAS Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Reach out for any queries or information</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Education Street, Knowledge City, 560001</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9876543210</p>
+                            <p>080-12345678</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@educare.edu</p>
+                            <p>admissions@educare.edu</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contact_name">Name*</label>
+                            <input type="text" id="contact_name" name="contact_name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact_email">Email*</label>
+                            <input type="email" id="contact_email" name="contact_email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact_subject">Subject*</label>
+                            <input type="text" id="contact_subject" name="contact_subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact_message">Message*</label>
+                            <textarea id="contact_message" name="contact_message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919876543210" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>Chat with us</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>EduCare Institute</h3>
+                    <p>Providing quality education and career guidance since 2001. Our mission is to empower students with knowledge and skills for a successful future.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#streams">Academic Streams</a></li>
+                        <li><a href="#admission">Admission Process</a></li>
+                        <li><a href="#counseling">Career Counseling</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on admissions, events and educational resources.</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 EduCare Institute. All Rights Reserved by SAHIL DIWAN.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
